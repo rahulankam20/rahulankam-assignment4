@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment4</title>
+    <script src="https://kit.fontawesome.com/2892cfcd4a.js" crossorigin="anonymous"></script> 
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body{
+            text-align: center;
+            background-image: url(https://i.pinimg.com/originals/f4/a8/24/f4a824191e0ad67810da63b98145bdfc.jpg);
+            background-size: 100% 100vh;
+        }
+        .mainbox{
+            width: 500px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center; 
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .in,.bottom{
+            background-color: white;
+            border: none;
+            padding: 16px;
+        }
+        .up{
+            background-color: #06ad94a8 ;
+            padding: 16px;
+        }
+        .reset{
+            background-color: #0c88cf73;
+            padding: 16px;
+        }
+        .in a{
+            color:#0e83c7;
+         
+            height: 30px;
+            text-decoration: none;
+        }
+        .up a{
+            color: white;
+            padding-top: 5px;
+            height: 30px;
+            text-decoration: none;
+        }
+        .reset a{
+            color: white;
+            padding-top: 5px;
+            height: 30px;
+            text-decoration: none;
+        }
+        .in,.up,.reset{
+            height: 50px;
+            
+        }
+        input[type=text],input[type=password]{
+            background-color: #a5b8c6;
+            border: none;
+            width: 80%;
+            padding: 25px;
+        }
+        button{
+            background-color: #06ad93;
+            width: 50%;
+            border: none;
+            margin: 25px 0px;
+            color: white;
+            padding:10px;
+        }
+        .top{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .bottom{
+            padding:50px 50px 0px 50px;
+        }
+        .in,.up,.reset,button{
+            letter-spacing: 2px;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: #068d79;
+        }
+        .input1{
+            width: 100%;
+            background-color: #a5b8c6;
+            display: flex;
+         }
+         .text{
+            margin: 0px 0px 15px 0px;
+         }
+         i{
+            padding: 20px 33px 20px;
+            width: 20%;
+         }
+        @media  screen and (max-width:525px) {
+            .mainbox{
+                width: 325px;
+                height: 325px;
+            }
+            i {
+                padding: 16px 8px 0px 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbox">
+        <div class="top">
+            <div class="in"><a href="#">SIGN IN</a></div>
+            <div class="up"><a href="#">SIGN UP</a></div>
+            <div class="reset"><a href="#">RESET</a></div>
+        </div>
+        <div class="bottom">
+            <div class="input1 text">
+                <input type="text" name="name" id="name" placeholder="Username">
+                <i class="fa-solid fa-user fa-2x"></i> 
+            </div>
+            <div class="input1">
+                <input type="password" name="pass" id="pass" placeholder="********">
+                <i class="fa-solid fa-lock fa-2x"></i>
+            </div>
+            <button> LOGIN</button>
+        </div>
+    </div>
+</body>
+</html>
